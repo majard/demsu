@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marlon.demsu.ShowProductOnMapActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/like_product_button"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#e29c4a"
+        android:text="I Want This Too!"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintRight_toRightOf="@+id/product_info"
+        app:layout_constraintTop_toBottomOf="@+id/product_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/startSearchProductActivityButton"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#e29c4a"
+        android:text="Search Product on location"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/RegisterProductButton"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="#e29c4a"
+        android:text="Register New Product"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintRight_toRightOf="@+id/map"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:layout_constraintRight_creator="1" />
+
+    <TextView
+        android:id="@+id/product_info"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/cardview_light_background"
+        android:elegantTextHeight="true"
+        android:gravity="center_horizontal"
+        android:text="Test Text"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/startSearchProductActivityButton"
+        app:layout_constraintRight_toRightOf="@+id/map"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="109dp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="0dp"
+        android:layout_height="262dp"
+        android:layout_marginBottom="58dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/product_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
+
